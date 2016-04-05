@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>4700 project</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ES6 support shims-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.1/es6-shim.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <environment names="Development">
+        <link href="~/dist/style.css" rel="stylesheet" />
+    </environment>
+    <environment names="Staging,Production">
+        <link href="~/dist/style.css" rel="stylesheet" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>
